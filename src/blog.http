@@ -1,0 +1,30 @@
+@server = http://localhost:3000
+
+### 조회
+GET {{server}}/blog
+
+### 추가
+POST {{server}}/blog
+Content-Type: application/json
+
+{
+  "title": "제목입니다",
+  "content": "내용입니다",
+  "name": "강현지"
+}
+
+### 조회
+GET {{server}}/blog/2
+
+### 삭제
+DELETE {{server}}/blog/3
+
+### 수정
+PUT {{server}}/blog/3
+Content-Type: application/json
+
+{
+  "title": "제목입니다 수정",
+  "content": "내용입니다 수정",
+  "name": "이름 수정"
+}
